@@ -1,0 +1,241 @@
+[class*="__container"]{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 1050px;
+}
+.wrapper {
+    position: relative;
+    /* overflow: hidden; */
+    min-height: 100%;
+}
+.header { 
+    width: 100%;
+    padding: 50px;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 10;
+    background-color: rgb(121, 52, 52);
+    text-align: center;
+}
+.header__title h1{
+    font-size: 40px;
+}
+main {
+    margin-top: 140px;
+    margin-bottom: 200px;
+}
+.design {
+    background-color: rgb(139, 238, 164);
+    height: 1100px;
+}
+.design__container {
+    background-color: rgb(188, 223, 200);
+}
+.fruits__box {
+    padding: 50px;
+    margin-bottom: 150px;
+}
+.box__title {
+    text-align: right;
+    font-size: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.box__title::before {
+    content: "";
+    background: url('../img/bananas.svg') 0 0 /100% no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+	top: 140px;
+	left: 100px;
+    opacity: 0.5;
+    z-index: 2;
+}
+.box__title::after {
+    content: "";
+    background: url('../img/watermelon.svg') 0 0 /100% no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+	top: 40px;
+	left: 80%;
+}
+.box__list {
+    max-width: 700px;
+    margin-left: 30px;
+    position: relative;
+}
+.box__list::before {
+    content: "";
+    background: url('../img/mango.svg') 0 0 /100% no-repeat;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 60%;
+    z-index: 2;
+    opacity: 0.4;
+}
+.box__list::after {
+    content: "";
+    background: url('../img/blueberry.svg') 0 0 /100% no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 90%;
+}
+.box__item {
+    padding-left: 30px;
+    position: relative;
+}
+.box__item:not(:last-child){
+    margin-bottom: 10px;
+}
+.box__item::before {
+    content: "";
+    background: url('../img/list.svg') 0 0 /100% no-repeat;
+    width:20px;
+	height: 20px;
+    position: absolute;
+	top: 4px;
+	left: 0px;
+}
+/* STICKY BOARD */
+
+.sticky {
+    max-width:250px;
+    background-color: rgb(67, 167, 133);
+    position: sticky;
+    top:20px;
+    left:10px;
+    z-index: 15;
+}
+.sticky__item h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* CAR */
+
+.car__roof {
+    margin-left: 200px;
+    border-bottom: 130px solid rgb(34, 33, 33);
+	border-left: 55px solid transparent;
+	border-right: 85px solid transparent;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 30%;
+	width: 400px;
+    position: relative;
+    z-index: 5;
+}
+
+.roof__glass-first{
+    border-bottom: 80px solid rgb(87, 84, 84);
+    border-left: 35px solid transparent;
+    width: 150px;
+    position: absolute;
+    top: 35px;
+    left: -25px;
+    z-index: 6;
+}
+.roof__glass-second{
+    border-bottom: 80px solid rgb(87, 84, 84);
+    border-right: 55px solid transparent;
+    width: 150px;
+    position: absolute;
+    top: 35px;
+    left: 155px;
+    z-index: 6;
+}
+
+.car__body {
+    width: 760px;
+    height: 230px;
+    margin: -5px auto 0;
+    position: relative;
+    background-color: rgb(226, 55, 55);
+    border-radius: 30%;
+    border-top-left-radius: 20%;
+}
+.body__light-behind {
+    width: 20px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgb(238, 37, 37);
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.body__light-front {
+    width: 20px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgb(231, 239, 241);
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+.body__handle {
+    width: 120px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: rgb(193, 201, 204);
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+.car__tires-block {
+    margin: -80px 0 0 180px;
+    position: relative;
+}
+.block__first {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+}
+.block__first--front {
+    position: absolute;
+    top: 0px;
+    right: 250px;
+}
+
+
+.block__second {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(200, 207, 214);
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.block__second--front {
+    position: absolute;
+    top: 25px;
+    left: 445px;
+}
+.block__third {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(219, 227, 236);
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.block__third--front {
+    position: absolute;
+    top: 50px;
+    left: 470px;
+}
+
+
+
+
+
+
+
+
+
